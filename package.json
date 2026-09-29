@@ -1,0 +1,14 @@
+{
+  "name": "photo-gallery",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "seed:admin": "npm --prefix server run seed:admin"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

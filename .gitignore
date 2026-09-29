@@ -1,0 +1,14 @@
+node_modules
+dist
+.env
+server/uploads/photos/*
+server/uploads/avatars/*
+!server/uploads/photos/.gitkeep
+!server/uploads/avatars/.gitkeep
+
+clint/node_modules
+clint/.env
+
+server/node_modules
+server/.env
+
